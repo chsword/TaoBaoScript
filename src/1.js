@@ -13,10 +13,10 @@ if (coupons.length > 0) {
     alert(alertText);
 } else {
 
-    var m = 0;
+
     var couponId = window.prompt("请输入优惠券Id");
-    var uvMin = window.prompt("请输入最小UV",0);
-    var uvMax = window.prompt("请输入最大UV",1000);
+    var uvMin = parseInt(window.prompt("请输入最小UV",0));
+    var uvMax = parseInt(window.prompt("请输入最大UV",1000));
     var div = $("#idc");
     if (div.length == 0) {
         div = $("<div>").css({ position: "fixed", top: 0, left: 0 });
@@ -24,6 +24,9 @@ if (coupons.length > 0) {
     }
     div.html("正在发送优惠券共" + (uvMax - uvMin) + "已发<em id=idc-already></em>,成功<em id=idc-success></em>");
     var success = 0;
+    console.log("min:" + uvMin);
+    console.log("max:" + uvMax);
+    var m = uvMin;
     for (var i = uvMin; i < uvMax; i++) {
         var k = i;
         window.setTimeout(function () {
