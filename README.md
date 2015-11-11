@@ -1,8 +1,14 @@
 TaoBaoScript
 ============
 
-淘宝使用的脚本
-1.江湖策自动发送优惠券脚本
+### 淘宝CRM自动发优惠券脚本
+更新时间 2015-11-11
+//204 是页码哦，加油
+va i = 204;setInterval(function(){if(i<1)return;$("[data="+(i--)+"]").eq(0).click();setTimeout(function(){$("input[data-table-index=1]").click();setTimeout(function(){$(".send-coupon.J_sendCoupon").click();setTimeout(function(){$(".btn.btn-primary.btn-lg").click();setTimeout(function(){$("[data-dismiss=modal]").click()},1000)},500)},1000)},3000)},7000)
+
+
+### 江湖策自动发送优惠券脚本
+更新时间 2014-05-27
 
 使用方法：
 第一步：
