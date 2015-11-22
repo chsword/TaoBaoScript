@@ -6,7 +6,7 @@ TaoBaoScript
 
 //204 是页码哦，加油
 
-va i = 204;setInterval(function(){if(i<1)return;$("[data="+(i--)+"]").eq(0).click();setTimeout(function(){$("input[data-table-index=1]").click();setTimeout(function(){$(".send-coupon.J_sendCoupon").click();setTimeout(function(){$(".btn.btn-primary.btn-lg").click();setTimeout(function(){$("[data-dismiss=modal]").click()},1000)},500)},1000)},3000)},7000)
+var i = 204;setInterval(function(){if(i<1)return;$("[data="+(i--)+"]").eq(0).click();setTimeout(function(){$("input[data-table-index=1]").click();setTimeout(function(){$(".send-coupon.J_sendCoupon").click();setTimeout(function(){$(".btn.btn-primary.btn-lg").click();setTimeout(function(){$("[data-dismiss=modal]").click()},1000)},500)},1000)},3000)},7000)
 
 
 ### 江湖策自动发送优惠券脚本
